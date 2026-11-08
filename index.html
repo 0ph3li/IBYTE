@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>i·byte — pocket pets made of ascii</title>
+  <meta name="description" content="i·byte makes pocket pets that live on a tiny screen and are made of ascii characters. Feed them, play with them, clean up after them. Ignore them and they bite." />
+  <meta name="theme-color" content="#060509" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════
+                 .-""""""-.
+               .'  _    _  '.             s i t e   b y
+              /   (o)  (o)   \
+             |  .----------.  |           g h o s t l y . g r l
+             |  |  (\ /)   |  |           ───────────────────────────
+             |  | ( •.• )  |  |           concept  ·  design  ·  code
+             |  | (")_(")o |  |
+             |  '----------'  |                 ( o.o )   <3
+              \    −  ●  +   /
+               '.          .'             it's a pet. it's a byte.
+                 '-.____.-'               ignore it and it bites.
+     ═══════════════════════════════════════════════════════════════
+       concept, design & code by ghostly.grl ♥
+       i·byte v2 — home, "glossy night": everything lives on black,
+       like the pearl & chrome renders in the moodboard (the pink heart
+       club flyer, the pearl cat shell, the strawberry egg, the foil frame).
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <!-- ============ loader: the egg ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__info info"><p>i·byte<br />pocket pets</p><p>hatching<br />please hold</p><p>do not<br />shake the egg</p></div>
+    <pre class="loader__egg"></pre>
+    <p class="loader__pct">hatching 00%</p>
+  </div>
+
+  <!-- ============ nav ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" aria-label="i·byte home">i<span>·</span>byte</a>
+    <span class="nav__st"><i></i><span data-status>alive &amp; fine</span></span>
+    <nav class="nav__links" aria-label="main">
+      <a href="litter.html" data-scr>the litter</a>
+      <a href="shells.html" data-scr>shells</a>
+      <a href="care.html" data-scr>care guide</a>
+      <a href="ghosts.html" data-scr>ghosts</a>
+      <a class="nav__adopt" href="adopt.html" data-mag=".3">adopt one <b>●</b></a>
+    </nav>
+    <button class="nav__menu" type="button" aria-label="menu">menu</button>
+  </header>
+
+  <main>
+
+    <!-- ============ 01 · hero — after the pink heart club flyer ============ -->
+    <section class="hero" id="top">
+      <div class="info hero__info">
+        <p>i·byte<br />pocket pets made of ascii<br />est. in ram</p>
+        <p>adoptions<br />open 24/7<br />hello@ibyte.pet</p>
+        <p>00h00<br />battery: cr2032<br />feed by: now</p>
+      </div>
+
+      <div class="hero__head">
+        <p class="hero__date" data-born>08.11.2026</p>
+        <p class="hero__area">hatch day</p>
+        <p class="hero__names">glitch - cache - ctrl - spam - blip - lowbat</p>
+      </div>
+
+      <div class="hero__stage">
+        <div class="ring ring--back" aria-hidden="true"><img src="img/SHELLS/hero-ring.png" alt="" /></div>
+        <div class="hero__float" data-float>
+          <div class="hero__dev" data-hero-dev></div>
+        </div>
+        <div class="ring ring--front" aria-hidden="true"><img src="img/SHELLS/hero-ring.png" alt="" /></div>
+        <div class="ring ring--bead" data-bead-box aria-hidden="true"><i class="bead" data-bead></i></div>
+        <div class="glass" data-glass aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__side hero__side--l" aria-live="polite">
+        <p class="hero__pet"><b data-hero-name>GLITCH</b><span data-hero-kind>bunny</span></p>
+        <p><span>full</span><b data-m="full">■■■□</b></p>
+        <p><span>joy</span><b data-m="joy">■■■□</b></p>
+        <p><span>mess</span><b data-m="poop">none</b></p>
+      </div>
+      <div class="hero__side hero__side--r">
+        <button type="button" data-act="0" data-cur="feed"><i>−</i>feed</button>
+        <button type="button" data-act="1" data-cur="play"><i>●</i>play</button>
+        <button type="button" data-act="2" data-cur="clean"><i>+</i>clean</button>
+        <p>or press the keys on the shell.<br />tap the screen to pet it.</p>
+      </div>
+
+      <h1 class="hero__word" aria-label="i·byte"><span class="hw">i</span><span class="hw hw--dot">·</span><span class="hw">b</span><span class="hw">y</span><span class="hw">t</span><span class="hw">e</span></h1>
+    </section>
+
+    <!-- ============ 02 · the rule ============ -->
+    <section class="rule" id="rule">
+      <div class="rule__pin">
+        <div class="info"><p>rule n°1<br />of 1</p><p>the only one<br />read it twice</p><p>the teeth are ascii<br />the marks stay till reload</p></div>
+        <h2 class="rule__lines">
+          <span class="rl"><span>feed it.</span></span>
+          <span class="rl"><span>play with it.</span></span>
+          <span class="rl"><span>clean up.</span></span>
+          <span class="rl rl--bite"><span data-bite-line>or it bites.</span></span>
+        </h2>
+        <div class="rule__dev" data-rule-dev></div>
+      </div>
+    </section>
+
+    <!-- ============ 03 · the litter — after the pearl cat on black ============ -->
+    <section class="litter" id="litter">
+      <div class="litter__pin">
+        <div class="info"><p>the litter<br />six pets, zero pixels</p><p>all of them<br />100% ascii</p><p>scroll to meet them<br />one at a time</p></div>
+        <div class="litter__ghost" data-lt-ghost aria-hidden="true">GLITCH</div>
+        <div class="litter__l">
+          <p class="litter__no" data-lt-no>n°01 / 06</p>
+          <h2 class="litter__name" data-lt-name>GLITCH</h2>
+          <p class="litter__kind" data-lt-kind>bunny</p>
+          <p class="litter__line" data-lt-line></p>
+          <dl class="litter__stats" data-lt-stats></dl>
+          <button class="btn btn--pearl" type="button" data-lt-adopt data-mag=".2" data-cur="adopt">make it mine</button>
+        </div>
+        <div class="litter__c">
+          <div class="litter__dev" data-lt-dev></div>
+        </div>
+        <ol class="litter__list" data-lt-list></ol>
+        <div class="litter__bar" aria-hidden="true"><i data-lt-bar></i></div>
+      </div>
+    </section>
+
+    <!-- ============ 04 · a day in the life ============ -->
+    <section class="day" id="day">
+      <div class="day__pin">
+        <div class="info"><p>a day in the life<br />of a byte</p><p>you’re busy? that’s okay.<br />it has other things to do.</p><p>it lives in real time<br />even with the tab closed</p></div>
+        <div class="day__clock" data-clock>07:00</div>
+        <div class="day__screen">
+          <pre class="day__lcd lcd" data-day-lcd></pre>
+        </div>
+        <ol class="day__log" data-day-log></ol>
+        <div class="day__bar" aria-hidden="true"><i data-day-bar></i></div>
+      </div>
+    </section>
+
+    <!-- ============ 05 · shells — after the strawberry egg on black ============ -->
+    <section class="shells" id="shells">
+      <div class="info"><p>i·byte shells<br />five shapes, one pet</p><p>pre-orders<br />€39 — €49</p><p>ships in<br />a padded egg</p></div>
+      <div class="shells__stage">
+        <div class="shells__glow" data-sh-glow aria-hidden="true"></div>
+        <div class="shells__hang" data-sh-hang>
+          <div class="shells__dev" data-shell-dev></div>
+        </div>
+      </div>
+      <div class="shells__info">
+        <p class="shells__no" data-sh-no>01 / 05</p>
+        <h2 class="shells__name" data-sh-name>CRUSH</h2>
+        <p class="shells__traits" data-sh-traits></p>
+        <p class="shells__note" data-sh-note></p>
+        <p class="shells__price"><span data-sh-price>€45</span><button class="btn btn--pink" type="button" data-sh-wear data-mag=".25">wear this shell</button></p>
+        <div class="shells__ctrl">
+          <button class="chrome" type="button" data-sh-prev aria-label="previous shell" data-cur="prev">‹</button>
+          <div class="shells__dots" data-sh-dots></div>
+          <button class="chrome" type="button" data-sh-next aria-label="next shell" data-cur="next">›</button>
+        </div>
+      </div>
+      <div class="slot slot--dark shells__photo bitable" data-img="HOME/shell-crush.png" data-note="the real shell, studio shot on black" data-sh-slot></div>
+    </section>
+
+    <!-- ============ 06 · worn — after the lookbook editorial ============ -->
+    <section class="worn" id="worn">
+      <div class="info"><p>lookbook<br />ss27</p><p>worn, not owned<br />clip it anywhere</p><p>photos<br />img/HOME</p></div>
+      <div class="worn__grid">
+        <div class="slot worn__close bitable" data-img="HOME/look-close.jpg" data-note="close-up: hood, glitter eye, long blue nails"></div>
+        <div class="slot worn__main bitable" data-img="HOME/look-main.png" data-note="full look: pink lace, sitting on chrome, device on the belt"></div>
+        <div class="worn__hang" data-worn-hang>
+          <div class="worn__dev" data-worn-dev></div>
+        </div>
+        <div class="slot worn__hand bitable" data-img="HOME/look-hand.png" data-note="a hand with bow nails holding the device"></div>
+        <div class="worn__copy">
+          <h2 class="worn__title">worn,<br />not owned.</h2>
+          <p>Clip it to your bag, your belt loop, your ex’s keys. It sees everything and it tells no one. Except you. Every hour. With a beep.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07 · adopt — the flip phone rings, you pick up ============ -->
+    <section class="call" id="adopt">
+      <div class="call__pin">
+        <div class="info call__info">
+          <p>07 — the adoption line</p>
+          <p>it’s ringing.<br />it’s for you.</p>
+          <p>toll free<br />open 24/7</p>
+        </div>
+        <h2 class="call__word" aria-label="pick up."><span class="cw cw--a">pick</span><span class="cw cw--b">up.</span></h2>
+        <div class="call__rings" aria-hidden="true"><i></i><i></i><i></i></div>
+
+        <div class="flip" data-flip>
+          <div class="flip__in" data-flip-in>
+            <!-- open phone, bottom half: keypad (her img/SHELLS/phone-img/3.png) -->
+            <div class="flip__base" data-base>
+              <img src="img/SHELLS/phone-img/3.png" alt="" />
+              <div class="flip__keys" data-keys></div>
+            </div>
+            <!-- open phone, the lid: the screen shows through the cut-out -->
+            <div class="flip__lid" data-lid>
+              <div class="ph" data-ph>
+                <div class="ph__bar"><span>▮▮▮▯</span><span data-ph-clock>03:00</span><span>3%</span></div>
+                <p class="ph__k" data-ph-k>1 new pet ♥</p>
+                <pre class="ph__pet" data-ph-pet aria-label="your pet"></pre>
+                <p class="ph__name">name: <b data-ph-name></b><i class="ph__caret">_</i></p>
+                <div class="ph__soft"><span>adopt</span><span data-ph-kind>bunny</span><span>clear</span></div>
+              </div>
+              <img src="img/SHELLS/phone-img/3.png" alt="" />
+            </div>
+            <!-- closed phone (img/SHELLS/phone-img/1.png), ringing; the pet peeks through the flower window -->
+            <button class="flip__closed" type="button" data-closed data-cur="pick up" aria-label="open the phone">
+              <span class="mini"><pre data-ph-mini></pre><b data-ph-caller>GLITCH</b><span>calling…</span></span>
+              <img src="img/SHELLS/phone-img/1.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <p class="call__sub">type a name on the keys · press <b>green</b> to adopt · it’s yours. no refunds.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="ft">
+    <div class="info ft__info">
+      <div><b>the pets</b><a href="litter.html">the litter</a><a href="shells.html">shells</a><a href="adopt.html">adopt one</a></div>
+      <div><b>the care</b><a href="care.html">care guide</a><a href="ghosts.html">ghosts</a><span>battery: cr2032, forever-ish</span></div>
+      <div><b>say hi</b><span>hello@ibyte.pet</span><span>@i.byte.pet</span><span>made in ram, 2027</span></div>
+    </div>
+    <div class="ft__ground" aria-hidden="true"><pre class="ft__walker"></pre></div>
+    <div class="ft__word" aria-hidden="true">i·byte</div>
+    <div class="ft__bottom">
+      <span>© i·byte 2027 · a concept toy</span>
+      <span>things bitten on this site: <b data-bitten>0</b></span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
+<!--
+              /\_/\
+             ( o.o )   <3  ghostly.grl
+              > ^ <
+          it's a pet. it's a byte. ignore it and it bites.
+-->

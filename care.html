@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>care guide — i·byte</title>
+  <meta name="description" content="How to keep an i·byte alive: feed it, play with it, clean up, let it sleep. A manual for something made of text." />
+  <meta name="theme-color" content="#060509" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════
+       i·byte — care guide
+       a manual you do instead of read: your own pet stays on screen
+       while you scroll, and every step happens to it for real.
+       concept, design & code by ghostly.grl ♥
+                    ( o.o )   <3
+     ═══════════════════════════════════════════════════════════════
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/care.css" />
+</head>
+<body class="pg-care">
+
+  <!-- ============ nav ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" aria-label="i·byte home">i<span>·</span>byte</a>
+    <span class="nav__st"><i></i><span data-status>alive &amp; fine</span></span>
+    <nav class="nav__links" aria-label="main">
+      <a href="litter.html" data-scr>the litter</a>
+      <a href="shells.html" data-scr>shells</a>
+      <a href="care.html" data-scr aria-current="page">care guide</a>
+      <a href="ghosts.html" data-scr>ghosts</a>
+      <a class="nav__adopt" href="adopt.html" data-mag=".3">adopt one <b>●</b></a>
+    </nav>
+    <button class="nav__menu" type="button" aria-label="menu">menu</button>
+  </header>
+
+  <main>
+
+    <!-- ============ intro + how it's doing right now ============ -->
+    <section class="cr-hero">
+      <div class="info cr-hero__info">
+        <p>care guide<br />manual v1.0</p>
+        <p>a manual for something<br />made of text</p>
+        <p>reading time: 2 min<br />its patience: less</p>
+      </div>
+      <h1 class="cr-hero__title" aria-label="care guide."><span class="cr-w">care</span><span class="cr-w">guide<span class="pdot">.</span></span></h1>
+      <div class="cr-now">
+        <p class="cr-now__k">your <b data-now-name>GLITCH</b>, right now</p>
+        <dl class="cr-now__m">
+          <div><dt>full</dt><dd data-now="full">■■■□</dd><span data-next="full">−1 in 40s</span></div>
+          <div><dt>joy</dt><dd data-now="joy">■■■□</dd><span data-next="joy">−1 in 55s</span></div>
+          <div><dt>mess</dt><dd data-now="poop">□□□</dd><span data-next="poop">+1 in 70s</span></div>
+        </dl>
+        <p class="cr-now__v" data-now-verdict>alive &amp; fine</p>
+      </div>
+      <p class="cr-hero__sub">don’t read it. do it. your pet stays on screen while you scroll, and every step happens to it for real.</p>
+    </section>
+
+    <!-- ============ the steps: device sticks, steps scroll ============ -->
+    <section class="cr-steps">
+      <div class="cr-steps__stick">
+        <div class="cr-stage">
+          <p class="cr-stage__k"><span data-step-no>01</span> / 06 · <span data-step-name>feed it</span></p>
+          <div class="cr-stage__dev" data-care-dev></div>
+          <div class="cr-keys" aria-hidden="true"><span data-k="0">−</span><span data-k="1">●</span><span data-k="2">+</span></div>
+        </div>
+      </div>
+      <ol class="cr-list">
+        <li class="cr-step bitable" data-step="feed">
+          <span class="cr-step__no chrome-t">01</span>
+          <h2>feed it <i>−</i></h2>
+          <p>press the left key. a little snack drops in and gets eaten in four bites. one snack fills one block of <b>full</b>. four is the max: after that it just looks at you.</p>
+          <button class="btn btn--pearl" type="button" data-try="0" data-cur="feed">try it: feed</button>
+        </li>
+        <li class="cr-step bitable" data-step="play">
+          <span class="cr-step__no chrome-t">02</span>
+          <h2>play with it <i>●</i></h2>
+          <p>the middle key throws a ball. it chases it, it hops, it sings. playing fills <b>joy</b>, and sometimes makes it a bit hungry again. that’s fair.</p>
+          <button class="btn btn--pearl" type="button" data-try="1" data-cur="play">try it: play</button>
+        </li>
+        <li class="cr-step bitable" data-step="clean">
+          <span class="cr-step__no chrome-t">03</span>
+          <h2>clean up <i>+</i></h2>
+          <p>what goes in comes out, in the bottom-right corner, as <code>(@)</code>. the right key sweeps the screen. a clean screen sparkles. a dirty one makes it sick: <code>x.x</code>.</p>
+          <button class="btn btn--pearl" type="button" data-try="2" data-cur="clean">try it: clean</button>
+        </li>
+        <li class="cr-step bitable" data-step="love">
+          <span class="cr-step__no chrome-t">04</span>
+          <h2>pet it <i>☝</i></h2>
+          <p>tap the screen. no reason. hearts come out. it doesn’t change any number, it just changes the day.</p>
+          <button class="btn btn--pearl" type="button" data-try="love" data-cur="pet it">try it: pet</button>
+        </li>
+        <li class="cr-step bitable" data-step="sleep">
+          <span class="cr-step__no chrome-t">05</span>
+          <h2>let it sleep <i>☾</i></h2>
+          <p>it naps when it wants to. don’t press anything. the lights go down, it does <code>zZ</code>. waking it up makes it <code>&gt;.&lt;</code>.</p>
+          <button class="btn btn--pearl" type="button" data-try="sleep" data-cur="lights out">lights out</button>
+        </li>
+        <li class="cr-step cr-step--bite bitable" data-step="bite">
+          <span class="cr-step__no chrome-t">06</span>
+          <h2>or it bites <i>!</i></h2>
+          <p>forget it long enough and <b>full</b> hits zero. then it gets angry and starts biting whatever you hover: buttons, photos, this paragraph. feeding it makes it stop. the marks stay.</p>
+          <button class="btn btn--pink" type="button" data-try="bite" data-cur="dare">show me</button>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ troubleshooting: read the face ============ -->
+    <section class="cr-faces">
+      <h2 class="cr-faces__title"><span class="chrome-t">read the</span> face</h2>
+      <p class="cr-faces__sub">it can’t talk. it has twelve faces instead. hover a row and yours makes it.</p>
+      <ul class="cr-faces__list" data-faces></ul>
+    </section>
+
+    <!-- ============ out ============ -->
+    <section class="cr-out">
+      <p class="cr-out__k">still alive? good.</p>
+      <a class="cr-out__go" href="ghosts.html" data-mag=".2" data-cur="look">see what happens if you don’t</a>
+      <p class="cr-out__sub">or go back and feed it → <a href="index.html">home</a></p>
+    </section>
+
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="ft">
+    <div class="info ft__info">
+      <div><b>the pets</b><a href="litter.html">the litter</a><a href="shells.html">shells</a><a href="adopt.html">adopt one</a></div>
+      <div><b>the care</b><a href="care.html">care guide</a><a href="ghosts.html">ghosts</a><span>battery: cr2032, forever-ish</span></div>
+      <div><b>say hi</b><span>hello@ibyte.pet</span><span>@i.byte.pet</span><span>made in ram, 2027</span></div>
+    </div>
+    <div class="ft__ground" aria-hidden="true"><pre class="ft__walker"></pre></div>
+    <div class="ft__word" aria-hidden="true">i·byte</div>
+    <div class="ft__bottom">
+      <span>© i·byte 2027 · a concept toy</span>
+      <span>things bitten on this site: <b data-bitten>0</b></span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <div class="cr-dark" aria-hidden="true"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/care.js"></script>
+</body>
+</html>
+<!--
+              /\_/\
+             ( o.o )   <3  ghostly.grl
+              > ^ <
+          feed it. play with it. clean up. or it bites.
+-->

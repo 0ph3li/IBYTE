@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>the litter — i·byte</title>
+  <meta name="description" content="Six ascii pets and one that doesn't exist. Meet the i·byte litter: their faces, their quirks, their shells." />
+  <meta name="theme-color" content="#060509" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════
+       i·byte — the litter
+       six pets, zero pixels. each one gets a chapter: its shell on a
+       pearl chain, its stats, its quirk and a sticker sheet of every
+       face it can make.
+       concept, design & code by ghostly.grl ♥
+                    ( o.o )   <3
+     ═══════════════════════════════════════════════════════════════
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/litter.css" />
+</head>
+<body class="pg-litter">
+
+  <!-- ============ nav ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" aria-label="i·byte home">i<span>·</span>byte</a>
+    <span class="nav__st"><i></i><span data-status>alive &amp; fine</span></span>
+    <nav class="nav__links" aria-label="main">
+      <a href="litter.html" data-scr aria-current="page">the litter</a>
+      <a href="shells.html" data-scr>shells</a>
+      <a href="care.html" data-scr>care guide</a>
+      <a href="ghosts.html" data-scr>ghosts</a>
+      <a class="nav__adopt" href="adopt.html" data-mag=".3">adopt one <b>●</b></a>
+    </nav>
+    <button class="nav__menu" type="button" aria-label="menu">menu</button>
+  </header>
+
+  <main>
+
+    <!-- ============ intro: six glass bubbles, one pet in each ============ -->
+    <section class="lt-hero">
+      <div class="info lt-hero__info">
+        <p>the litter<br />six pets, zero pixels</p>
+        <p>all of them hatched<br />in ram, 2027</p>
+        <p>pick one<br />it already picked you</p>
+      </div>
+      <h1 class="lt-hero__title" aria-label="the litter."><span class="lt-w">the</span><span class="lt-w">litter</span><span class="lt-w pdot">.</span></h1>
+      <ol class="lt-bubs" data-bubs></ol>
+      <p class="lt-hero__sub">every i·byte is a few characters of text that eat, sleep, sulk and make a mess. <br />tap a bubble to meet one.</p>
+    </section>
+
+    <!-- ============ one chapter per pet (built by js/litter.js) ============ -->
+    <div class="lt-pets" data-pets></div>
+
+    <!-- ============ the one that doesn't exist ============ -->
+    <section class="lt-404" id="404">
+      <div class="lt-404__card bitable" data-404>
+        <p class="lt-404__no">n°?? / 06</p>
+        <pre class="lt-404__pet" data-404-pet aria-label="a locked pet"></pre>
+        <h2 class="lt-404__name" data-404-name>???</h2>
+        <p class="lt-404__line" data-404-line>not found. it says it found you, though.</p>
+        <p class="lt-404__hint" data-404-hint>↑ ↑ ↓ ↓ ← → ← → b a</p>
+      </div>
+    </section>
+
+    <!-- ============ out ============ -->
+    <section class="lt-out">
+      <p class="lt-out__k">made up your mind?</p>
+      <a class="lt-out__go" href="index.html#adopt" data-mag=".2" data-cur="call it">call the adoption line</a>
+      <p class="lt-out__sub">or change shells first → <a href="shells.html">shells</a></p>
+    </section>
+
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="ft">
+    <div class="info ft__info">
+      <div><b>the pets</b><a href="litter.html">the litter</a><a href="shells.html">shells</a><a href="adopt.html">adopt one</a></div>
+      <div><b>the care</b><a href="care.html">care guide</a><a href="ghosts.html">ghosts</a><span>battery: cr2032, forever-ish</span></div>
+      <div><b>say hi</b><span>hello@ibyte.pet</span><span>@i.byte.pet</span><span>made in ram, 2027</span></div>
+    </div>
+    <div class="ft__ground" aria-hidden="true"><pre class="ft__walker"></pre></div>
+    <div class="ft__word" aria-hidden="true">i·byte</div>
+    <div class="ft__bottom">
+      <span>© i·byte 2027 · a concept toy</span>
+      <span>things bitten on this site: <b data-bitten>0</b></span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/litter.js"></script>
+</body>
+</html>
+<!--
+              /\_/\
+             ( o.o )   <3  ghostly.grl
+              > ^ <
+          six pets. zero pixels. one of them bites.
+-->

@@ -1,0 +1,68 @@
+/* ═══════════════════════════════════════════════════════════════
+   I·BYTE — ghosts.css · the memorial, the same night but colder
+   concept, design & code by ghostly.grl ♥
+   ═══════════════════════════════════════════════════════════════ */
+.nav__links a[aria-current] { color: var(--pink); }
+.pdot { display: inline-block; background: linear-gradient(180deg, #ffd1e8, #ff4fa2 60%, #b3125e); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 24px rgba(255, 79, 162, .6)); }
+
+/* ============ intro ============ */
+.gh-hero { position: relative; min-height: 100vh; padding: 96px var(--pad) 60px; display: grid; grid-template-rows: auto 1fr auto; overflow: hidden; }
+.gh-hero::before { content: ''; position: absolute; left: 50%; bottom: -30vh; width: 140vw; height: 80vh; transform: translateX(-50%); background: radial-gradient(closest-side, rgba(169, 188, 255, .14), transparent); pointer-events: none; }
+.gh-float { position: absolute; inset: 0; pointer-events: none; }
+.gh-ghost { position: absolute; top: 0; margin: 0; font-weight: 800; line-height: 1.05; color: #dfe6ff; text-shadow: 0 0 12px rgba(169, 188, 255, .8); white-space: pre; }
+.gh-ghost i, .gh-card pre i { font-style: normal; color: var(--pink); }
+.gh-hero__info { position: relative; z-index: 2; }
+.gh-hero__info b { color: var(--pink); font-size: 1.3em; text-shadow: 0 0 10px rgba(255, 79, 162, .6); }
+.gh-hero__title { position: relative; z-index: 1; align-self: center; margin: 0; text-align: center; font: 800 clamp(110px, 24vw, 440px)/.8 var(--f-sans); letter-spacing: -.08em; padding-bottom: .08em; }
+.gh-w { display: inline-block; color: transparent; background: linear-gradient(180deg, #ffffff 0%, #dfe5f5 35%, #8e95ab 52%, #eef1fa 64%, rgba(255, 255, 255, .25) 100%); -webkit-background-clip: text; background-clip: text; filter: drop-shadow(0 0 40px rgba(169, 188, 255, .35)); }
+.gh-hero__sub { position: relative; z-index: 2; max-width: 540px; margin: 0 auto; text-align: center; color: var(--mute); font-size: 16px; line-height: 1.5; }
+
+/* ============ the fade ============ */
+.gh-fade { position: relative; border-top: 1px solid var(--line); }
+.gh-fade__pin { position: relative; height: 100vh; min-height: 620px; display: grid; grid-template-rows: auto 1fr auto auto; justify-items: center; align-items: center; padding: 90px var(--pad) 40px; overflow: hidden; }
+.gh-fade__pin::before { content: ''; position: absolute; left: 50%; top: 50%; width: 60vw; height: 60vw; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(closest-side, rgba(255, 79, 162, .1), transparent); pointer-events: none; }
+.gh-fade__k { font: 600 11px var(--f-sans); text-transform: uppercase; letter-spacing: .06em; color: var(--mute); }
+.gh-fade__k b { color: var(--pink); }
+.gh-fade__pet { position: relative; margin: 0; font: 800 clamp(26px, 4.6vw, 70px)/1.05 var(--f-mono); color: #ffe4f2; text-shadow: 0 0 18px rgba(255, 140, 200, .65); white-space: pre; transition: color 1s, text-shadow 1s; }
+.gh-fade__pet i { font-style: normal; color: var(--pink); }
+.gh-fade__pet.is-ghost { color: #dfe6ff; text-shadow: 0 0 24px rgba(169, 188, 255, .9); }
+.gh-fade__clock { font: 800 clamp(40px, 6vw, 96px)/1 var(--f-sans); letter-spacing: -.05em; background: var(--chrome); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.gh-fade__steps { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px; font: 700 11px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--dim); max-width: 980px; }
+.gh-fade__steps li { transition: color .4s, text-shadow .4s; }
+.gh-fade__steps li.on { color: var(--pink); text-shadow: 0 0 10px rgba(255, 79, 162, .7); }
+.gh-fade__bar { width: min(600px, 80vw); height: 3px; margin-top: 18px; border-radius: 3px; background: rgba(255, 255, 255, .12); overflow: hidden; }
+.gh-fade__bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--pink), #a9bcff); box-shadow: 0 0 10px var(--pink); }
+
+/* ============ the wall ============ */
+.gh-wall { padding: 120px var(--pad) 90px; border-top: 1px solid var(--line); }
+.gh-wall__head { display: flex; justify-content: space-between; align-items: end; gap: 30px; flex-wrap: wrap; margin-bottom: 44px; }
+.gh-wall__title { margin: 0; font: 800 clamp(56px, 9vw, 160px)/.86 var(--f-sans); letter-spacing: -.07em; }
+.gh-wall__head p { color: var(--mute); font-size: 15px; max-width: 300px; }
+.gh-wall__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.gh-card {
+  position: relative; display: grid; gap: 8px; justify-items: center; text-align: center; padding: 30px 18px 18px; border-radius: 120px 120px 18px 18px;
+  background: radial-gradient(110% 70% at 50% 0%, #15131d, #060508 70%); box-shadow: 0 0 0 1px rgba(255, 255, 255, .08); transition: transform .4s var(--ease);
+}
+.gh-card:hover { transform: translateY(-6px); }
+.gh-card__pet { margin: 6px 0 4px; min-height: 6.4em; display: grid; align-content: end; font: 800 15px/1.05 var(--f-mono); color: #dfe6ff; text-shadow: 0 0 10px rgba(169, 188, 255, .7); white-space: pre; opacity: .7; transition: opacity .6s, color .6s; }
+.gh-card.is-warm .gh-card__pet { opacity: 1; color: #ffe4f2; text-shadow: 0 0 10px rgba(255, 140, 200, .7); }
+.gh-card__name { font: 800 22px/1 var(--f-sans); letter-spacing: -.03em; }
+.gh-card__kind { font: 600 10px var(--f-sans); text-transform: uppercase; letter-spacing: .06em; color: var(--mute); }
+.gh-card__why { font-size: 14px; line-height: 1.4; color: #cfc8d4; font-style: italic; min-height: 2.8em; }
+.gh-candle { display: flex; align-items: end; gap: 8px; margin-top: 6px; padding: 8px 14px; border-radius: 30px; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .14); transition: box-shadow .3s; }
+.gh-candle:hover { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .4); }
+.gh-candle pre { margin: 0; font: 800 13px/1 var(--f-mono); color: #f3eef6; white-space: pre; }
+.gh-candle pre i { font-style: normal; color: #ffb36b; text-shadow: 0 0 8px #ff9d3f, 0 0 16px #ff4fa2; }
+.gh-candle span { font: 700 12px var(--f-mono); color: var(--mute); }
+.gh-candle.is-lit { box-shadow: inset 0 0 0 1px rgba(255, 79, 162, .6), 0 0 20px rgba(255, 79, 162, .3); }
+.gh-candle.is-lit span { color: var(--pink); }
+@media (max-width: 1000px) { .gh-wall__grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 700px) { .gh-wall__grid { grid-template-columns: 1fr 1fr; gap: 10px; } .gh-card { padding: 24px 10px 14px; } .gh-card__pet { font-size: 9px; } .gh-card__name { font-size: 18px; } }
+
+/* ============ yours ============ */
+.gh-yours { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 5vw; align-items: center; padding: 110px var(--pad); border-top: 1px solid var(--line); }
+.gh-yours__dev { width: min(100%, 420px); justify-self: end; }
+.gh-yours__k { font: 600 12px var(--f-sans); text-transform: uppercase; letter-spacing: .06em; color: var(--mute); }
+.gh-yours__title { margin: 8px 0 18px; font: 800 clamp(80px, 12vw, 220px)/.85 var(--f-sans); letter-spacing: -.08em; background: linear-gradient(180deg, #ffd1e8, #ff4fa2 55%, #b3125e); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 34px rgba(255, 79, 162, .45)); padding-bottom: .06em; }
+.gh-yours__sub { color: #ddd5df; font-size: 17px; line-height: 1.5; max-width: 34ch; margin-bottom: 24px; }
+@media (max-width: 760px) { .gh-yours { grid-template-columns: 1fr; } .gh-yours__dev { justify-self: center; width: 70vw; } }

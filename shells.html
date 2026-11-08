@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>shells — i·byte</title>
+  <meta name="description" content="Five shells for one tiny ascii pet: pearl heart, rhinestone cat, strawberry egg, spiked heart and a jelly cloud." />
+  <meta name="theme-color" content="#060509" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════
+       i·byte — shells
+       a keychain rack: five shells hanging on pearl chains, your pet
+       living in all of them. then the counter, one shell at a time,
+       sliding sideways like a jewellery tray.
+       concept, design & code by ghostly.grl ♥
+                    ( o.o )   <3
+     ═══════════════════════════════════════════════════════════════
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shells.css" />
+</head>
+<body class="pg-shells">
+
+  <!-- ============ nav ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" aria-label="i·byte home">i<span>·</span>byte</a>
+    <span class="nav__st"><i></i><span data-status>alive &amp; fine</span></span>
+    <nav class="nav__links" aria-label="main">
+      <a href="litter.html" data-scr>the litter</a>
+      <a href="shells.html" data-scr aria-current="page">shells</a>
+      <a href="care.html" data-scr>care guide</a>
+      <a href="ghosts.html" data-scr>ghosts</a>
+      <a class="nav__adopt" href="adopt.html" data-mag=".3">adopt one <b>●</b></a>
+    </nav>
+    <button class="nav__menu" type="button" aria-label="menu">menu</button>
+  </header>
+
+  <main>
+
+    <!-- ============ the rack: five shells on pearl chains ============ -->
+    <section class="sh-rack">
+      <div class="info sh-rack__info">
+        <p>shells<br />five houses, one pet</p>
+        <p>your pet is in<br />all of them right now</p>
+        <p>swap any time<br />it won’t notice. it will.</p>
+      </div>
+      <h1 class="sh-rack__title" aria-label="shells."><span class="sh-w">shells</span><span class="pdot">.</span></h1>
+      <div class="sh-rack__row" data-rack></div>
+      <p class="sh-rack__sub">pick it up, press its keys, tap a screen. scroll for the counter.</p>
+    </section>
+
+    <!-- ============ the counter: one shell at a time, sliding sideways ============ -->
+    <section class="sh-counter" data-counter>
+      <div class="sh-counter__pin">
+        <div class="sh-counter__top">
+          <p>the counter</p>
+          <p class="sh-counter__dots" data-dots></p>
+          <p><span data-count>01</span> / 05</p>
+        </div>
+        <div class="sh-track" data-track></div>
+      </div>
+    </section>
+
+    <!-- ============ what's in the box ============ -->
+    <section class="sh-box">
+      <h2 class="sh-box__title"><span class="chrome-t">every shell</span> comes with</h2>
+      <ul class="sh-box__list" data-box>
+        <li><b>01</b>a pet that’s already yours</li>
+        <li><b>02</b>a pearl ball chain, 40 cm</li>
+        <li><b>03</b>three keys: feed · play · clean</li>
+        <li><b>04</b>one cr2032 battery, forever-ish</li>
+        <li><b>05</b>a black screen that glows</li>
+        <li><b>06</b>zero warranty against bites</li>
+      </ul>
+      <div class="sh-marquee" aria-hidden="true"><p data-marquee>pearl · rhinestones · strawberry milk · bubblegum clay · chrome spikes · translucent jelly · </p></div>
+    </section>
+
+    <!-- ============ out ============ -->
+    <section class="sh-out">
+      <p class="sh-out__k">found the one?</p>
+      <a class="sh-out__go" href="index.html#adopt" data-mag=".2" data-cur="call it">call the adoption line</a>
+      <p class="sh-out__sub">or meet the pets first → <a href="litter.html">the litter</a></p>
+    </section>
+
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="ft">
+    <div class="info ft__info">
+      <div><b>the pets</b><a href="litter.html">the litter</a><a href="shells.html">shells</a><a href="adopt.html">adopt one</a></div>
+      <div><b>the care</b><a href="care.html">care guide</a><a href="ghosts.html">ghosts</a><span>battery: cr2032, forever-ish</span></div>
+      <div><b>say hi</b><span>hello@ibyte.pet</span><span>@i.byte.pet</span><span>made in ram, 2027</span></div>
+    </div>
+    <div class="ft__ground" aria-hidden="true"><pre class="ft__walker"></pre></div>
+    <div class="ft__word" aria-hidden="true">i·byte</div>
+    <div class="ft__bottom">
+      <span>© i·byte 2027 · a concept toy</span>
+      <span>things bitten on this site: <b data-bitten>0</b></span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/shells.js"></script>
+</body>
+</html>
+<!--
+              /\_/\
+             ( o.o )   <3  ghostly.grl
+              > ^ <
+          five shells. one pet. it has opinions.
+-->

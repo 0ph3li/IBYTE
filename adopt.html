@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>adopt one — i·byte</title>
+  <meta name="description" content="Adopt an i·byte: pick a pet, pick a shell, give it a name, sign the papers, hatch it." />
+  <meta name="theme-color" content="#060509" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════
+       i·byte — adopt one
+       the adoption papers: pick, dress, name, sign. a holographic
+       hatch certificate fills in as you go. then the egg cracks.
+       concept, design & code by ghostly.grl ♥
+                    ( o.o )   <3
+     ═══════════════════════════════════════════════════════════════
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/adopt.css" />
+</head>
+<body class="pg-adopt">
+
+  <!-- ============ nav ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" aria-label="i·byte home">i<span>·</span>byte</a>
+    <span class="nav__st"><i></i><span data-status>alive &amp; fine</span></span>
+    <nav class="nav__links" aria-label="main">
+      <a href="litter.html" data-scr>the litter</a>
+      <a href="shells.html" data-scr>shells</a>
+      <a href="care.html" data-scr>care guide</a>
+      <a href="ghosts.html" data-scr>ghosts</a>
+      <a class="nav__adopt" href="adopt.html" data-mag=".3" aria-current="page">adopt one <b>●</b></a>
+    </nav>
+    <button class="nav__menu" type="button" aria-label="menu">menu</button>
+  </header>
+
+  <main>
+
+    <section class="ad">
+      <div class="info ad__info">
+        <p>adopt one<br />the papers</p>
+        <p>four steps<br />no refunds</p>
+        <p>it will remember<br />this day. you won’t.</p>
+      </div>
+      <h1 class="ad__title" aria-label="adopt one."><span class="ad-w">adopt</span><span class="ad-w">one<span class="pdot">.</span></span></h1>
+
+      <div class="ad__grid">
+        <!-- ============ the form ============ -->
+        <form class="ad__form" data-form autocomplete="off" onsubmit="return false">
+
+          <fieldset class="ad-step" data-step="1">
+            <legend><b>01</b> pick a pet</legend>
+            <div class="ad-pets" data-pets role="radiogroup" aria-label="pet"></div>
+          </fieldset>
+
+          <fieldset class="ad-step" data-step="2">
+            <legend><b>02</b> pick a shell</legend>
+            <div class="ad-shells" data-shells role="radiogroup" aria-label="shell"></div>
+          </fieldset>
+
+          <fieldset class="ad-step" data-step="3">
+            <legend><b>03</b> name it</legend>
+            <label class="ad-name">
+              <span class="sr">name</span>
+              <input type="text" maxlength="10" placeholder="something you’ll yell at 3am" data-name spellcheck="false" />
+              <button class="ad-name__dice" type="button" data-dice data-cur="random" aria-label="random name">⚄</button>
+            </label>
+            <p class="ad-hint">10 characters max. it will answer to it. mostly.</p>
+          </fieldset>
+
+          <fieldset class="ad-step" data-step="4">
+            <legend><b>04</b> sign the papers</legend>
+            <div class="ad-sign">
+              <canvas data-sign aria-label="sign here with your mouse or finger"></canvas>
+              <span class="ad-sign__x">✕</span>
+              <span class="ad-sign__line">sign here. it’s legally binding (it isn’t).</span>
+              <button class="ad-sign__clear" type="button" data-sign-clear>clear</button>
+            </div>
+          </fieldset>
+
+          <button class="ad-hatch" type="button" data-hatch data-mag=".2" data-cur="hatch">hatch it <i>●</i></button>
+        </form>
+
+        <!-- ============ live preview + certificate ============ -->
+        <aside class="ad__side">
+          <div class="ad__dev" data-dev></div>
+          <div class="cert bitable" data-cert>
+            <div class="cert__foil" aria-hidden="true"></div>
+            <div class="cert__in">
+              <p class="cert__top"><span>i·byte</span><span>hatch certificate</span><span data-serial>IB-0000</span></p>
+              <div class="cert__body">
+                <pre class="cert__pet" data-cert-pet></pre>
+                <dl>
+                  <div><dt>name</dt><dd data-c="name">—</dd></div>
+                  <div><dt>kind</dt><dd data-c="kind">—</dd></div>
+                  <div><dt>shell</dt><dd data-c="shell">—</dd></div>
+                  <div><dt>hatched</dt><dd data-c="date">—</dd></div>
+                </dl>
+              </div>
+              <div class="cert__sig"><img data-c="sig" alt="" /><span>adopted by</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ the hatch ============ -->
+    <div class="hatch" data-hatch-layer aria-hidden="true">
+      <pre class="hatch__egg" data-egg></pre>
+      <p class="hatch__k" data-hatch-k>hatching…</p>
+      <div class="hatch__done" data-hatch-done>
+        <a class="btn btn--pink" href="index.html">take it home</a>
+        <a class="btn btn--pearl" href="care.html">read the care guide</a>
+        <button class="btn btn--pearl" type="button" data-again data-cur="again">adopt another</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="ft">
+    <div class="info ft__info">
+      <div><b>the pets</b><a href="litter.html">the litter</a><a href="shells.html">shells</a><a href="adopt.html">adopt one</a></div>
+      <div><b>the care</b><a href="care.html">care guide</a><a href="ghosts.html">ghosts</a><span>battery: cr2032, forever-ish</span></div>
+      <div><b>say hi</b><span>hello@ibyte.pet</span><span>@i.byte.pet</span><span>made in ram, 2027</span></div>
+    </div>
+    <div class="ft__ground" aria-hidden="true"><pre class="ft__walker"></pre></div>
+    <div class="ft__word" aria-hidden="true">i·byte</div>
+    <div class="ft__bottom">
+      <span>© i·byte 2027 · a concept toy</span>
+      <span>things bitten on this site: <b data-bitten>0</b></span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/adopt.js"></script>
+</body>
+</html>
+<!--
+              /\_/\
+             ( ^.^ )   <3  ghostly.grl
+              > ^ <
+          congratulations. it's a byte.
+-->
